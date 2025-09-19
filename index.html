@@ -5,23 +5,39 @@
     <title>Veldig knallfin nettside!</title>
     <style>
       body {
-        background-color: rgb(16, 105, 93);
+        background: linear-gradient(135deg, #264564, #b7b8b3);
         color: rgb(0, 195, 255);
       }
     </style>
   </head>
   <body>
-    <h1 style="font-family: cursive; color: cyan; text-align: center">
+    <h1
+      style="font-family: cursive; color: rgb(0, 166, 255); text-align: center"
+    >
       Veldig knallfin nettside!
     </h1>
     <div style="text-align: center">
-      <img src="Safari.jpg" alt="Safari bilde" width="1000" height="400" />
+      <img
+        src="Safari.jpg"
+        alt="Safari bilde"
+        style="max-width: 50%; height: auto"
+      />
+      />
     </div>
 
-    <h1 style="font-family: cursive; color: red">
+    <h2
+      style="
+        font-family: cursive;
+        background: linear-gradient(90deg, #ff0000, #aa00ff, #aa00ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      "
+    >
       Trykk på knappen under for å ringe JW's telefon
-    </h1>
-    
+    </h2>
+
     <button
       onclick="sendRequest()"
       style="
@@ -45,5 +61,3 @@
     </script>
   </body>
 </html>
-
-
