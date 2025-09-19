@@ -2,7 +2,7 @@
 <html lang="no">
   <head>
     <meta charset="UTF-8" />
-    <title>Veldig fin nettside</title>
+    <title>Veldig knallfin nettside!</title>
     <style>
       body {
         background-color: rgb(16, 105, 93);
@@ -11,13 +11,14 @@
     </style>
   </head>
   <body>
-    <h1>Veldig fin nettside</h1>
+    <h1>Veldig knallfin nettside!</h1>
     <button onclick="sendRequest()">Ring</button>
     <script>
       function sendRequest() {
         fetch(
           "https://webhook.homey.app/66e6cedcc49b5d495d704bd1/call?tag=Hello%2C%20this%20is%20a%20call%20from%20a%20HTML%20website%21"
         );
+        alert("Ringer JW's telefon!");
       }
     </script>
   </body>
