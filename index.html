@@ -161,14 +161,21 @@
     </div>
     <script>
       function sendRequest() {
+
         const input = document.getElementById("messageInput").value;
         const encodedMsg = encodeURIComponent(input);
-        fetch(
+       if (!input) {
+          alert("Please enter a message before calling.");
+          return;
+       } else {
+           fetch(
           "https://webhook.homey.app/66e6cedcc49b5d495d704bd1/call?tag=" +
             encodedMsg
         );
+       }
+        }
         alert("Ringer JW's telefon: " + input);
-      }
+      
     </script>
     <div class="center">
       <p>Trykk på bildet</p>
