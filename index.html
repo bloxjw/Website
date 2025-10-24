@@ -162,7 +162,7 @@
     <script>
       function sendRequest() {
         const input = document.getElementById("messageInput").value;
-        const encodedMsg = encodeURIComponent(input ? input : encodedMsg);
+        const encodedMsg = encodeURIComponent(input);
         fetch(
           "https://webhook.homey.app/66e6cedcc49b5d495d704bd1/call?tag=" +
             encodedMsg
